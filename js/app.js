@@ -1,9 +1,10 @@
 const donateBtn = document.getElementById('donate-btn');
 donateBtn.addEventListener('click', function () {
-    const donateInput = parseFloat(document.getElementById('donate-input').value);
-    const balanceDonate = parseFloat(document.getElementById('balance-donate').innerText);
-    const balanceAccount = parseFloat(document.getElementById('account-balance').innerText);
 
+    const donateInput = showInputValue('donate-input');
+    const balanceDonate = showInputText('balance-donate');
+    const balanceAccount = showInputBalance('account-balance');
+    console.log(donateInput);
     if (donateInput > balanceAccount) {
         return alert('not enough money for donation');
     }
@@ -18,6 +19,10 @@ donateBtn.addEventListener('click', function () {
     document.getElementById('balance-donate').innerText = newDonateBalance.toFixed(2);
     document.getElementById('donate-input').value = '';
 })
+
+
+// fani donated 
+
 
 
 const loadedPage = document.getElementById('page-loaded');
