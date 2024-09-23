@@ -7,10 +7,11 @@ donateBtn.addEventListener('click', function () {
 
     if (donateInput > balanceAccount) {
         alert('not enough money for donation');
+        // const mordelShow = document.getElementById('modal-show');
+        // mordelShow.classList.add('hidden');
         return;
     }
-
-
+    
     if (isNaN(donateInput) || donateInput <= 0) {
         alert('invalid donation try again');
         return;
