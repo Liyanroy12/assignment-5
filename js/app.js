@@ -22,5 +22,6 @@ donateBtn.addEventListener('click', function () {
 
 const loadedPage = document.getElementById('page-loaded');
 loadedPage.addEventListener('click', function(){
-    window.location.href='./block.html';
+    console.log('blocked added');
+    window.location.href='../block.html';
 })
