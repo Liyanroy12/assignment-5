@@ -15,5 +15,16 @@ faniBtn.addEventListener('click', function () {
     document.getElementById('fani-balance').innerText = balanceFaniNew.toFixed(2);
     document.getElementById('account-balance').innerText = newFaniBalnce.toFixed(2)
     document.getElementById('fani-donate-input').value = '';
+
+    const addHistory = document.getElementById('history-section');
+    const adInput = document.getElementById('input-text-second').innerText;
+    const dateTime = new Date();
+    const createHistory = document.createElement('div');
+    createHistory.className = "border border-gray-400 rounded, p-4 mb-4";
+    createHistory.innerHTML = `
+        <p class="text-xl font-bold">${faniInput} Taka is ${adInput} </p>
+        <p>${dateTime}</p>
+    `;
+    addHistory.appendChild(createHistory);
 })
 

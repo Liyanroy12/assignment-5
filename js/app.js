@@ -5,12 +5,10 @@ donateBtn.addEventListener('click', function () {
     const balanceDonate = showInputText('balance-donate');
     const balanceAccount = showInputBalance('account-balance');
 
-    console.log(donateInput);
     if (donateInput > balanceAccount) {
         alert('not enough money for donation');
         return;
     }
-
 
 
     if (isNaN(donateInput) || donateInput <= 0) {
@@ -23,6 +21,17 @@ donateBtn.addEventListener('click', function () {
     document.getElementById('account-balance').innerText = newBalance.toFixed(2);
     document.getElementById('balance-donate').innerText = newDonateBalance.toFixed(2);
     document.getElementById('donate-input').value = '';
+
+    const addHistory = document.getElementById('history-section');
+    const adInput = document.getElementById('input-text').innerText;
+    const dateTime = new Date();
+    const createHistory = document.createElement('div');
+    createHistory.className = "border border-gray-400 rounded, p-4 mb-4";
+    createHistory.innerHTML = `
+        <p class="text-xl font-bold">${donateInput} Taka is ${adInput} </p>
+        <p>${dateTime}</p>
+    `;
+    addHistory.appendChild(createHistory);
 })
 
 

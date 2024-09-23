@@ -19,4 +19,16 @@ qutaBtn.addEventListener('click', function(){
     document.getElementById('account-balance').innerText = qutaBalanceNew;
     document.getElementById('quita-balace').innerText = qutaNewBalance;
     document.getElementById('quta-input').value = '';
+
+
+    const addHistory = document.getElementById('history-section');
+    const adInput = document.getElementById('input-text-third').innerText;
+    const dateTime = new Date();
+    const createHistory = document.createElement('div');
+    createHistory.className = "border border-gray-400 rounded, p-4 mb-4";
+    createHistory.innerHTML = `
+        <p class="text-xl font-bold">${qutaInput} Taka is ${adInput} </p>
+        <p>${dateTime}</p>
+    `;
+    addHistory.appendChild(createHistory);
 })

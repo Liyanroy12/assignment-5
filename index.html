@@ -42,15 +42,15 @@
         </nav>
         <div class="flex justify-center items-center  bg-white py-10">
             <div>
-                <button class="btn mx-5 px-4 bg-[#B4F461]">Donation</button>
+                <button id="donate" class="btn mx-5 px-4 bg-[#B4F461]">Donation</button>
             </div>
             <div>
-                <button class="btn bg-[#fff] text-[#111111B3] px-4">History</button>
+                <button id="history" class="btn bg-[#fff] text-[#111111B3] px-4">History</button>
             </div>
         </div>
     </header>
 
-    <main class="mt-52 w-11/12 mx-auto">
+    <main id="main-donated-section" class="mt-52 w-11/12 mx-auto">
         <!-- First card -->
         <section class="flex-1 lg:flex justify-around items-center border border-[#1111111A] p-2 rounded mt-4">
             <div class="lg:w-1/2">
@@ -67,7 +67,7 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="font-bold text-2xl mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
+                <h2 id="input-text" class="font-bold text-2xl mb-4">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="mb-4"> The recent floods in Noakhali have caused significant damage to homes infrastructure.
                     Your donation will help provide essential supplies and to those affected by this disaster. Every
                     contribution, big or small, makes difference. Please join us in supporting the relief efforts and
@@ -97,7 +97,7 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="font-bold text-2xl mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
+                <h2 id="input-text-second" class="font-bold text-2xl mb-4">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="mb-4"> The recent floods in Feni have devastated local communities, leading to severe
                     disruption and loss. Your generous donation will help provide immediate aid, including food, clean
                     water, and medical supplies, to those affected by this calamity. Together, we can offer crucial
@@ -127,7 +127,7 @@
                         </h2>
                     </div>
                 </div>
-                <h2 class="font-bold text-2xl mb-4">Aid for Injured in the Quota Movement</h2>
+                <h2 id="input-text-third" class="font-bold text-2xl mb-4">Aid for Injured in the Quota Movement</h2>
                 <p class="mb-4"> The recent Quota movement has resulted in numerous injuries and significant hardship
                     for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and
                     necessary supplies to those affected. By contributing, you help ensure that injured individuals
@@ -141,7 +141,7 @@
             </div>
         </section>
 
-        <section id="block-id">
+        <section>
             <!-- Frist card Mordal desgin -->
             <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
@@ -161,7 +161,13 @@
                 </div>
             </dialog>
         </section>
+
+        
     </main>
+    <!-- heistory section -->
+    <section id="history-section" class="hidden mt-60 w-11/12 mx-auto">
+        
+     </section>
     <script src="./js/feature.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/fani.js"></script>
