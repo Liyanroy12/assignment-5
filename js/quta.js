@@ -16,8 +16,8 @@ qutaBtn.addEventListener('click', function(){
     const qutaBalanceNew = balanceAccount - qutaInput;
 
 
-    document.getElementById('account-balance').innerText = qutaBalanceNew;
-    document.getElementById('quita-balace').innerText = qutaNewBalance;
+    document.getElementById('account-balance').innerText = qutaBalanceNew.toFixed(2);
+    document.getElementById('quita-balace').innerText = qutaNewBalance.toFixed(2);
     document.getElementById('quta-input').value = '';
 
 
